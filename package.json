@@ -1,6 +1,7 @@
 {
-  "name": "my-app",
+  "name": "ue-test-sample-app",
   "version": "0.1.0",
+  "homepage": "https://raquelima.github.io/ue-test-sample-app",
   "private": true,
   "dependencies": {
     "@adobe/universal-editor-cors": "^2.2.11",
@@ -11,6 +12,7 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -18,9 +20,10 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
