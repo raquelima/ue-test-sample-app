@@ -5,35 +5,27 @@ function App() {
       data-aue-type="container"
     >
       <h1
-        data-aue-resource="urn:test:/content/test-app/text"
+        data-aue-resource="urn:test:/content/test-app/title"
         data-aue-prop="title"
         data-aue-type="text"
         data-aue-behavior="component"
       >
-        Test App
+        Welcome to the UE Test App
       </h1>
-      <h2
-        data-aue-resource="urn:test:/content/test-app/text"
+      <h3
+        data-aue-resource="urn:test:/content/test-app/description"
         data-aue-prop="title"
         data-aue-type="text"
         data-aue-behavior="component"
       >
-        Description
-      </h2>
-      <div
-        data-aue-resource="urn:test:/content/test-app/text"
-        data-aue-prop="description"
-        data-aue-type="richtext"
-        data-aue-behavior="component"
-      >
-        This is a test app
-      </div>
+        Find below multiple use cases:
+      </h3>
       <ul
         data-aue-resource="urn:test:/content/test-app/list"
         data-aue-type="container"
       >
         <li
-          data-aue-resource="urn:test:/content/test-app/listitem"
+          data-aue-resource="urn:test:/content/test-app/first-listitem"
           data-aue-prop="text"
           data-aue-type="text"
           data-aue-behavior="component"
@@ -42,7 +34,7 @@ function App() {
         </li>
 
         <li
-          data-aue-resource="urn:test:/content/test-app/listitem"
+          data-aue-resource="urn:test:/content/test-app/second-listitem"
           data-aue-prop="text"
           data-aue-type="text"
           data-aue-behavior="component"
