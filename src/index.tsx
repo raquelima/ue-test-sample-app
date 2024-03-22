@@ -2,15 +2,40 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import "@adobe/universal-editor-cors";
+import UnorderedList from "./pages/UnorderedList";
+import OrderedList from "./pages/OrderedList";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/ue-test-sample-app",
+    element: <App />,
+  },
+  {
+    path: "/ue-test-sample-app/unordered-list",
+    element: <UnorderedList />,
+  },
+  {
+    path: "/ue-test-sample-app/ordered-list",
+    element: <OrderedList />,
+  },
+]);
+
 root.render(
   <React.StrictMode>
-    <App />
+    <div className="App">
+      <RouterProvider router={router} />
+    </div>
   </React.StrictMode>
 );
 
